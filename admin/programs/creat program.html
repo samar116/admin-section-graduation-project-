@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+     
+    <!-- font awesome -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+         
+         <!-- google fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" >
+          
+      
+      <!-- custom styling -->
+          <link rel="stylesheet" href="../../css/style.css">
+
+          <!-- custom styling -->
+          <link rel="stylesheet" href="../../css/admin.css">
+      
+          
+          <title>admin section - Add Program</title>
+          <link rel="icon" href="../../admin/logo/logo-ana.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="navbar-brand" href="index post.html"> <img src="../../admin/logo/logo-ana.png" alt="logo"></a>
+        </div>
+        <i class="fa fa-bars menue-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    &nbsp;
+                    Username
+                    &nbsp;
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                  <ul>
+                    <li><a href="#" class="Logout">Logout</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </header>
+    
+    <!-- admin page-wrapper -->
+
+     <div class="admin-wrapper">
+        
+        <!-- left sidebar -->
+         
+         <div class="left-sidebar">
+           <ul>
+               <li><a href="../posts/index post.html">Mange Posts</a></li>
+               <li><a href="../users/index user.html">Mange Users</a></li>
+               <li><a href="../facultes/index faculty.html">Mange Faculty</a></li>
+               <li><a href="../programs/index program.html">Mange Program</a></li>
+               <li><a href="../courses/index courses.html">Mange Course</a></li>
+           </ul>
+         </div>
+        
+         <!-- // left sidebar -->
+         <!-- main content -->
+             
+        <div class="admin-content">
+            <div class="button-group">
+              <a href="../programs/creat program.html" class="btn btn-big">Add Program</a>
+              <a href="../programs/index program.html" class="btn btn-big">Manage Program</a>
+          </div>
+
+            <div class="content">
+                <h2 class="page-title">Add Program</h2>
+                  <form action="creat post.html" method="post">
+                   
+                    <div>
+                      <label>Name</label>
+                      <input type="text" name="username" class="text-input">
+                    </div>
+                    <div>
+                        <label>Id</label>
+                        <input type="id" name="id" class="text-input">
+                    </div>
+                    <div>
+                        <label>N.F Courses</label>
+                        <input type="number" name="number" class="text-input">
+                    </div>
+                   
+                  
+                    <div>
+                        <button type="submit" class="btn btn-big">Add Program </button>
+                    </div>
+                  </form>
+            </div>
+
+        </div>
+        <!-- // main content -->
+
+     </div>
+    
+    <!--//  admin page-wrapper -->
+
+     
+
+    <!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+    
+    <!-- custom script --> 
+    <script src="../../js/script.js"></script>
+</body>
+</html>

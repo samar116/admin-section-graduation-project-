@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+     
+    <!-- font awesome -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+         
+         <!-- google fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" >
+          
+      
+      <!-- custom styling -->
+          <link rel="stylesheet" href="../../css/style.css">
+
+          <!-- custom styling -->
+          <link rel="stylesheet" href="../../css/admin.css">
+      
+          
+          <title>admin section - manage Program</title>
+          <link rel="icon" href="../../admin/logo/logo-ana.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="navbar-brand" href="index post.html"> <img src="../../admin/logo/logo-ana.png" alt="logo"></a>
+        </div>
+        <i class="fa fa-bars menue-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    &nbsp;
+                    Username
+                    &nbsp;
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                  <ul>
+                    <li><a href="#" class="Logout">Logout</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </header>
+    
+    <!-- admin page-wrapper -->
+
+     <div class="admin-wrapper">
+        
+        <!-- left sidebar -->
+         
+         <div class="left-sidebar">
+            <ul>
+                <li><a href="../posts/index post.html">Mange Posts</a></li>
+                <li><a href="../users/index user.html">Mange Users</a></li>
+                <li><a href="../facultes/index faculty.html">Mange Faculty</a></li>
+                <li><a href="../programs/index program.html">Mange Program</a></li>
+                <li><a href="../courses/index courses.html">Mange Course</a></li>
+            </ul>
+         </div>
+        
+         <!-- // left sidebar -->
+         <!-- main content -->
+             
+         <div class="admin-content">
+            <div class="button-group">
+                <a href="../programs/creat program.html" class="btn btn-big">Add Program</a>
+                <a href="../programs/index program.html " class="btn btn-big">Manage Program</a>
+            </div>
+            
+            <div class="content">
+                <h2 class="page-title">Mange Program</h2>
+                <table>
+                    <thead>
+                        <th>Sn</th>
+                        <th>Name</th>
+                        <th> Courses</th>
+                        <th colspan="2">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Program 1</td>
+                            <td>  
+                                <div>
+                              <select name="courses" class="text-input" >
+                                  <option value="course 1">course 1</option>
+                                  <option value="course 2">course 2</option>
+                                  <option value="course 3">course 3</option>
+      
+                              </select>
+                          </div>
+                        </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                                <div id="id01" class="modal">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <form class="modal-content" action="/action_page.php">
+                                    <div class="container">
+                                      <h1>Delete Program</h1>
+                                      <p>Are you sure you want to delete ?</p>
+                                
+                                      <div class="clearfix">
+                                        <button type="button" class="cancelbtn">Cancel</button>
+                                        <button type="button" class="deletebtn">Delete</button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Program 2</td>
+                            <td>  
+                                <div>
+                              <select name="courses" class="text-input" >
+                                  <option value="course 4">course 4</option>
+                                  <option value="course 5">course 5</option>
+                              </select>
+                          </div>
+                        </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                                <div id="id02" class="modal">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <form class="modal-content" action="/action_page.php">
+                                    <div class="container">
+                                      <h1>Delete Program</h1>
+                                      <p>Are you sure you want to delete ?</p>
+                                
+                                      <div class="clearfix">
+                                        <button type="button" class="cancelbtn">Cancel</button>
+                                        <button type="button" class="deletebtn">Delete</button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Program 3</td>
+                            <td>  
+                                <div>
+                              <select name="courses" class="text-input" >
+                                  <option value="course 6">course 6</option>
+                                  <option value="course 7">course 7</option>
+                                  <option value="course 8">course 8</option>
+                                  <option value="course 9">course 9</option>
+                                  <option value="course 10">course 10</option>
+                              </select>
+                          </div>
+                        </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                                <div id="id03" class="modal">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <form class="modal-content" action="/action_page.php">
+                                    <div class="container">
+                                      <h1>Delete Program</h1>
+                                      <p>Are you sure you want to delete ?</p>
+                                
+                                      <div class="clearfix">
+                                        <button type="button" class="cancelbtn">Cancel</button>
+                                        <button type="button" class="deletebtn">Delete</button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+         </div>
+
+        <!-- // main content -->
+       
+         
+     </div>
+    
+    <!--//  admin page-wrapper -->
+
+     
+
+    <!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" 
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <!-- custom script --> 
+    <script src="../../js/script.js"></script>
+</body>
+</html>
